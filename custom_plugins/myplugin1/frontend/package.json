@@ -1,0 +1,20 @@
+{
+  "name": "@sysreptor/plugin-myplugin1-frontend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "nuxt generate",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@sysreptor/plugin-base-layer": "../../../sysreptor-src/packages/plugin-base-layer",
+    "@sysreptor/nuxt-base-layer": "../../../sysreptor-src/packages/nuxt-base-layer",
+
+    "nuxt": "*",
+    "vuetify": "*",
+    "pinia": "*"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}

@@ -1,0 +1,9 @@
+services:
+  app:
+    # Override the docker image
+    image: !reset null
+    build: 
+      # Note: Path is relative to sysreptor/deploy/docker-compose.yml (or an absolute path)
+      context: /path/to/sysreptor-plugin-example
+      args:
+        SYSREPTOR_VERSION: ${SYSREPTOR_VERSION:-latest}
